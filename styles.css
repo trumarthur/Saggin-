@@ -1,0 +1,298 @@
+/* Global Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Page Wrapper to contain the two sections */
+.page-wrapper {
+    height: 200vh; /* Double the height for the two desktop views */
+    scroll-snap-type: y mandatory; /* Enables snap scrolling vertically */
+    overflow-y: scroll; /* Allows vertical scrolling */
+}
+
+/* Each section takes up full screen */
+section {
+    scroll-snap-align: start; /* Snap to start of each section */
+    height: 100vh; /* Full viewport height for each desktop */
+    width: 100%;
+}
+
+/* Home Page (Desktop 1) */
+.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Push elements apart */
+    background: url('https://preview.redd.it/adsadasdsa-v0-rl15okocq4vd1.png?auto=webp&s=c8201f5feceb6073ecde4c16c7d2811a80f25060') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    padding-bottom: 50px; /* Space at the bottom for the button */
+}
+
+.logo {
+    max-width: 350px;
+    height: auto;
+    position: absolute; /* Make the logo absolute */
+    top: -50px; /* Move it upwards (can adjust this value as needed) */
+    z-index: 10; /* Ensure it's on top of other elements */
+    margin-top: 0; /* Remove any margin to ensure it moves as far up as needed */
+}
+
+.nav {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+}
+
+.nav-item {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.search-bar {
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    padding: 8px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+}
+
+.brand-name {
+    font-size: 64px;
+    margin: 40px 0;
+    font-family: 'Lightning Bolt', sans-serif;
+}
+
+.buy-now-btn {
+    padding: 12px 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 8px;
+    position: relative;
+    text-decoration: none; /* Remove underline */
+}
+
+.buy-now-btn:hover {
+    background-color: gray;
+}
+
+/* Best Sellers Page (Desktop 2) */
+.best-sellers-page {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.best-sellers {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.best-sellers h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    font-family: 'Lightning Bolt', sans-serif;
+}
+
+.pants-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.pants-image {
+    height: 300px; /* Set a fixed height */
+    width: 180px; /* Set a fixed width */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+/* About Page */
+/* Global Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #333; /* Background color similar to your example */
+    color: white; /* White text for better readability */
+}
+
+/* About Page Styles */
+.about-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh; /* Makes the page fill the entire viewport height */
+    padding: 20px;
+    background-color: #2b2b2b; /* Adjust background to match the theme */
+    position: relative;
+}
+
+/* Navigation Styles */
+.nav {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.nav-item {
+    margin-right: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Logo */
+.logo {
+    max-width: 350px;
+    height: auto;
+    position: absolute; /* Keep absolute positioning */
+    top: -100px; /* Move it above the top edge, adjust the value as needed */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust positioning to truly center */
+    z-index: 10; /* Ensure it's on top of other elements */
+}
+
+
+
+
+.logo img {
+    max-width: 200px;
+    height: auto;
+}
+
+/* About Content */
+.about-content {
+    text-align: left;
+    max-width: 800px;
+    padding: 40px;
+    line-height: 1.6;
+}
+
+.about-content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.about-content h2 {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.about-content p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Side Quote */
+.side-quote {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background: rgba(0, 0, 0, 0.6); /* Transparent black background */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    text-align: center;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.side-quote p {
+    margin: 0;
+}
+
+/* Shop Section*/
+.shop-section {
+    background-image: url('https://preview.redd.it/d1oy0lkty4vd1.png?width=1080&crop=smart&auto=webp&s=0e5db0ff16e4529893d9f3e50d7e46ac397e1a29'); /* Add the background image URL here */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+}
+
+.shop-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the container */
+}
+
+/* Section Headings */
+/* Section Headings */
+h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    color: lightgray;
+    margin-bottom: 20px;
+    text-align: center; /* Center the text horizontally */
+    width: 100%; /* Ensure the heading takes full width of its container */
+}
+
+
+/* Row of Products */
+.pants-row {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly with smaller gaps */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    margin-bottom: 30px; /* Space between rows */
+}
+
+.pants-item {
+    text-align: center;
+    width: 30%; /* Each product gets 30% width for 3 products per row */
+    margin-bottom: 20px; /* Add space between rows */
+}
+
+.pants-image {
+    height: auto;
+    width: 100%; /* Ensure full width of each item */
+    max-height: 400px; /* Set a maximum height to prevent images from becoming too large */
+    object-fit: contain; /* Make sure the entire image is visible and maintains its aspect ratio */
+    margin-bottom: 10px;
+}
+
+
+.buy-now-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: black; /* Match the background color */
+    color: white; /* Match the text color */
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase; /* Ensure uppercase text like in your image */
+    border: 2px solid black; /* Border that matches background */
+    border-radius: 4px; /* Slightly rounded corners */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.buy-now-btn:hover {
+    background-color: white;
+    color: black; /* Invert colors on hover */
+    border: 2px solid black; /* Keep the black border */
+}
+
+
